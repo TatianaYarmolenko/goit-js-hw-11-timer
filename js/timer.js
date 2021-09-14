@@ -1,6 +1,6 @@
 import refs from './refs.js'
 
-const targetTime = new Date('July 01,2021 03:24:00')
+const targetTime = new Date('November 01,2021 03:24:00')
 
 class Timer  {
    constructor({onTick}) {
@@ -37,8 +37,8 @@ const timer = new Timer({onTick: updateTimer});
 timer.start()
 
 function updateTimer ({ days, hours, mins, secs }) {
-   refs.day.textContent = `${-days}`;
-   refs.hour.textContent = `${-hours}`;
-   refs.min.textContent = `${-mins}`;
-   refs.sec.textContent = `${-secs}`;
+   refs.day.textContent = `${days}`;
+   refs.hour.textContent = `${hours}`;
+   refs.min.textContent = `${mins}`;
+   refs.sec.textContent = `${secs}`;
 }
